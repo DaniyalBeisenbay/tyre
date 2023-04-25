@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
+      
+
+    <title>Обо мне</title>
+
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>Даниял Бейсенбай</span>
+        </div>
+        <div id="about"><h1></h1></div>
+        <a href="https://tochka-na-karte.ru/Goroda-i-Gosudarstva/10096-Bajanaul.html" target="_blank" title="Где родился" onclick="slowScroll('#main')">Где родился</a>
+        <a href="https://wikiway.com/kazakhstan/astana/" target="_blank" title="Где живу" onclick="slowScroll('#overiew')">Где живу</a>
+        <a href="file:///C:/Users/%D0%94%D0%B0%D0%BD%D0%B8%D1%8F%D0%BB/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20(3)/index.html" target="_blank" title="Возможности" onclick="slowScroll('#contacts')">Возможности</a>
+        
+    </header>
+    <div id="top">
+        <h1>Welcome</h1>
+        <h3>To Fight Club</h3>
+    </div>
+    <div id="main">
+        <div class="intro">
+            <h2>Обо мне</h2>
+            <span>Живу в Астане с 2019-го года.</span>
+        </div>
+        <div class="text">
+            <span>Больше информаций про меня вы можете узнать по ссылке "Возможности". Этот сайт я делал сам.</span>
+        </div>
+    </div>
+    <div id="overview">
+        <h2>Туда сюда</h2>
+        <h4>Информация про мою жизнь можете посмотреть на моем инстаграм аккаунте.  </h4>
+        <a href="https://www.instagram.com/daniyal.b_/" target="_blank" title="Аккаунт" color onclick="slowScroll('#contacts')">@daniyal.b_</a>
+        <br>
+        <a href="file:///C:/Users/%D0%94%D0%B0%D0%BD%D0%B8%D1%8F%D0%BB/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/%D0%9A%D1%80%D0%B0%D1%81%D0%B0%D0%B2%D1%87%D0%B8%D0%BA/Index.html" target="_blank" class="btn btn-succses" role="button">Молодец то что прочитал до конца!</a>
+
+        <div class="img">
+            <img src="" alt="">
+            <span></span>
+        </div>
+        <div class="img">
+            <img src="" alt="">
+            <span></span>
+        </div>
+        <div class="img">
+            <img src="" alt="">
+            <span></span>
+        </div>
+        <div class="img">
+            <img src="" alt="">
+            <span></span>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        function slowScroll(id){
+            $('body').animated({
+                scrollTop: $(id).offset().top
+            },500);
+        }
+        $(document).on("scroll", function(){
+            if($(window).scrollTop()=== 0)
+            $("header").removeClass("fixed");
+            else
+                $("header").attr("class","fixed");
+        });
+    </script>
+</body>
+</html> 
